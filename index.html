@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Amina!</title>
+    <style>
+        /* Base styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: url('birthday_background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        /* Text outline */
+        h1, p, h3 {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Hero section */
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            margin: 50px 20px;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            margin: 0;
+            color: #ffd700;
+        }
+        .hero p {
+            font-size: 1.8rem;
+            margin: 20px 0 40px;
+            line-height: 1.6;
+        }
+
+        /* Interactive hover cards */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            width: 320px;
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+            transition: transform 0.3s ease, background 0.3s ease, backdrop-filter 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 6px 25px rgba(255, 255, 255, 0.5);
+        }
+
+        /* Card Titles */
+        .card h3 {
+            margin: 0;
+            font-size: 1.8rem;
+            color: #ffd700;
+        }
+
+        /* Card text initially hidden */
+        .card p {
+            font-size: 1.2rem;
+            margin: 15px 0 0;
+            color: #fff;
+            line-height: 1.6;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        /* Show text on hover */
+        .card:hover p {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Footer section */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .hero p {
+                font-size: 1.5rem;
+            }
+            .card {
+                width: 90%;
+                padding: 15px;
+            }
+            .card h3 {
+                font-size: 1.5rem;
+            }
+            .card p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1.2rem;
+            }
+            .card {
+                width: 100%;
+                padding: 10px;
+            }
+            .card h3 {
+                font-size: 1.2rem;
+            }
+            .card p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>🎂 Happy Birthday, Amina! 🎂</h1>
+        <p>It’s your big day! Let’s celebrate the amazing, fun, and beautiful soul you are. Today’s all about you, so let’s make it awesome!</p>
+    </div>
+
+    <!-- Interactive Hover Cards -->
+    <div class="card-container">
+        <div class="card">
+            <h3>🎉 Your Amazing Energy</h3>
+            <p>Amina, your vibe is unmatched! You light up every room and make everything so much more fun. Keep being you A Zin!</p>
+        </div>
+        <div class="card">
+            <h3>💖 A Heart So Kind</h3>
+            <p>You’ve got a heart of gold, and everyone who knows you is lucky to have you in their life. Here’s to more love and good vibes!</p>
+        </div>
+        <div class="card">
+            <h3>✨ Birthday Magic</h3>
+            <p>Your kindness inspires, your love knows no end. Here’s to a heart so pure it can mend the world.</p>
+        </div>
+        <div class="card">
+            <h3>🌈 Endless Possibilities</h3>
+            <p>The world is a canvas, and you are the artist. Paint it with love, laughter, and endless possibilities.</p>
+        </div>
+        <div class="card">
+            <h3>🌸 A Garden of Dreams</h3>
+            <p>May your dreams bloom like flowers in spring, each one brighter and more beautiful than the last.</p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        Made with love for Amina | © 2024 Ayman
+    </div>
+</body>
+</html>
